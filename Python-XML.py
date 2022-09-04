@@ -41,7 +41,6 @@ for treeProperties in xmlTree.findall('.//'):
 				fastestPerson = f.get('name')
 				print ("Fastest participant name:", fastestPerson)
 				datawrite.write('Fastest participant name: %s' % (fastestPerson) + '\n')
-                
 print ("\n**Event participants**\n")
 datawrite.write('\n*Event participants**\n')
 
