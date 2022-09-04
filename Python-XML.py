@@ -19,12 +19,12 @@ if len(argv) > 1:
     print(__doc__)
     exit(0)
 
-with open('F1-Grand-Prix-Australia.xml', 'r') as xmlFile:
+with open('F1-Grand-Prix-Australia.xml', 'r') as xmlFile: #file name
     xmlTree = ET.parse(xmlFile)
 
 print ("\n")
 
-datawrite = open('XMLResults.txt', 'w+')
+datawrite = open('XMLResults.txt', 'w+') #Result
 
 for treeProperties in xmlTree.findall('.//'):
 	for prop in treeProperties.findall('properties/property'):
